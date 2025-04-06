@@ -14,12 +14,6 @@ html {
 :root {
     --font-family: "Lato", sans-serif;
     --second-family: "Raleway", sans-serif;
-    --color-white: #ffffff;
-    --color-black: #000;
-    --text-01-color: #272733;
-    --text-02-color: #3e9cdc;
-    --text-02-color-hover: #3e9ddcd5;
-    --text-03-color: #286690;
 }
 
 body,
@@ -74,7 +68,7 @@ img {
 // highlight 
 
 .highlight {
-    color: var(--text-02-color);
+    color: #3e9cdc;
 }
 
 // container, wrapper
@@ -139,11 +133,11 @@ img {
 
 .header {
     position: fixed;
-    z-index: 9;
+    z-index: 14;
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(16, 16, 29, 0.9);
+    background-color: #10101de6;
     padding: 33px 0;
 
     @media (max-width: 768px) {
@@ -167,7 +161,7 @@ img {
         font-weight: 800;
         font-size: 28px;
         text-transform: uppercase;
-        color: var(--color-white);
+        color: #ffffff;
         transition: .5s;
 
         @media (max-width: 576px) {
@@ -183,7 +177,7 @@ img {
 
         &:hover &-accent {
             transition: .5s;
-            color: var(--color-white);
+            color: #ffffff;
         }
 
         &-accent {
@@ -238,8 +232,8 @@ img {
     top: 66px;
     left: 0;
     width: 100%;
-    z-index: 10;
-    background-color: rgba(16, 16, 29, .9);
+    z-index: 13;
+    background-color: #10101de6;
     padding-top: 64px;
 
     @media (max-width: 768px) {
@@ -259,7 +253,7 @@ img {
     }
 
     & ul {
-        border-top: 1px solid rgba(43, 43, 43, 0.1);
+        border-top: 1px solid #2b2b2b1a;
         padding-top: 32px;
         padding-left: 20px;
         padding-right: 20px;
@@ -272,7 +266,7 @@ img {
 }
 
 .burger-btn {
-    z-index: 11;
+    z-index: 12;
     position: relative;
     display: none;
     width: 30px;
@@ -329,22 +323,22 @@ img {
 // btn order
 
 .btn {
-    border: 1px solid var(--color-white);
+    border: 1px solid #ffffff;
     border-radius: 4px;
     padding: 15px 10px;
-    background: var(--text-02-color);
+    background: #3e9cdc;
     font-family: var(--font-family);
     text-transform: uppercase;
     text-align: center;
-    color: var(--color-white);
+    color: #ffffff;
     width: 100%;
     transition: .5s;
     cursor: pointer;
 
     &:hover {
         transition: .5s;
-        background: var(--text-02-color-hover);
-        border: 1px solid var(--text-02-color);
+        background: #3e9ddcd5;
+        border: 1px solid #3e9cdc;
     }
 
     &--intro {
@@ -362,7 +356,7 @@ img {
     &--detail {
         border: 1px solid #6f6d7b;
         max-width: 183px;
-        background: var(--color-white);
+        background: #ffffff;
         font-weight: 400;
         font-size: 13px;
         color: #2a2b30;
@@ -396,7 +390,7 @@ img {
 
 .intro {
     width: 100%;
-    background-color: var(--color-white);
+    background-color: #ffffff;
     background-image: url('../img/bg-1.jpg');
     background-size: 100% 100%;
     background-position: center;
@@ -436,7 +430,7 @@ img {
         font-weight: 700;
         font-size: 48px;
         text-transform: uppercase;
-        color: var(--color-black);
+        color: #ffffff;
         max-width: 780px;
         width: 100%;
         white-space: normal;
@@ -465,7 +459,7 @@ img {
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 20px;
-        color: var(--color-black);
+        color: #ffffff;
         max-width: 780px;
         width: 100%;
         margin-top: 80px;
@@ -536,7 +530,7 @@ img {
 
 .order {
     width: 100%;
-    background-color: var(--text-01-color);
+    background-color: #272733;
     background-image: url('../img/bg-2.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -556,7 +550,7 @@ img {
         font-size: 36px;
         line-height: 43px;
         text-transform: uppercase;
-        color: var(--color-white);
+        color: #ffffff;
         margin-bottom: 30px;
 
         @media (max-width: 576px) {
@@ -778,7 +772,7 @@ img {
         padding: 12px 10px;
         border: 1px solid #fff;
         border-radius: 3px;
-        background-color: rgba(255, 255, 255, .85);
+        background-color: #ffffffd9;
         -webkit-transition: border .3s ease, border-radius .3s ease, background-color .3s ease;
         -o-transition: border .3s ease, border-radius .3s ease, background-color .3s ease;
         transition: border .3s ease, border-radius .3s ease, background-color .3s ease;
@@ -819,23 +813,23 @@ img {
         align-items: center;
         width: 9px;
         height: 6px;
-        color: #000
+        color: #000;
     }
 
     &__select-dropdown {
-        z-index: 20;
+        z-index: 10;
         position: absolute;
         display: none;
         top: 100%;
         width: 100%;
         border: 1px solid #3d4050;
         border-radius: 3px;
-        background-color: rgba(39, 39, 51, .9);
+        background-color: #272733e6;
         -webkit-transition: opacity .3s ease, visibility .3s ease;
         -o-transition: opacity .3s ease, visibility .3s ease;
         transition: opacity .3s ease, visibility .3s ease;
         opacity: 0;
-        visibility: hidden
+        visibility: hidden;
     }
 
     &__select-list {
@@ -849,7 +843,7 @@ img {
         border-bottom: 2px solid transparent;
         list-style: none;
         scrollbar-width: thin;
-        scrollbar-color: #3e9cdc #3d4050
+        scrollbar-color: #3e9cdc #3d4050;
     }
 
     &__select-list::-webkit-scrollbar {
@@ -880,9 +874,9 @@ img {
     }
 
     &__select.is-open &__select-button {
-        border: 1px solid rgba(61, 64, 80, .85);
+        border: 1px solid #3d4050d9;
         border-radius: 3px 3px 0 0;
-        background-color: rgba(61, 64, 80, .85)
+        background-color: #3d4050d9;
     }
 
     &__select.is-open &__select-icon svg,
@@ -931,7 +925,7 @@ img {
         font-size: 18px;
         line-height: 22px;
         border: 1px solid #fff;
-        background-color: rgba(255, 255, 255, .85);
+        background-color: #ffffffd9;
         outline: 0;
 
         @media (max-width: 992px) {
@@ -1007,7 +1001,7 @@ img {
         &-input {
             width: 100%;
             height: 7px;
-            background: rgba(255, 255, 255, 0.7);
+            background: #ffffffb3;
             border: 1px solid #ffffff;
             border-radius: 50px;
             -webkit-appearance: none;
