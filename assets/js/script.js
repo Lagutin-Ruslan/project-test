@@ -283,7 +283,6 @@ function initBurgerMenu() {
 
     // Инициализация стилей для анимации
     burgerMnu.style.transition = 'max-height 0.5s ease, opacity 0.5s ease';
-    // burgerMnu.style.overflow = 'hidden';
     burgerMnu.style.maxHeight = '0';
     burgerMnu.style.opacity = '0';
 
