@@ -193,8 +193,8 @@ img {
   left: 0;
   width: 100%;
   z-index: 13;
-  background-color: #10101de6;
-  -webkit-background-color: #10101de6;
+  /* background-color: #10101de6;
+  -webkit-background-color: #10101de6; */
   padding-top: 64px;
 }
 @media (max-width: 768px) {
