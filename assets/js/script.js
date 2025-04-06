@@ -226,7 +226,6 @@ function openMenu() {
     lineTop.classList.add('line__top--open');
     lineBottom.classList.add('line__bottom--open');
     document.body.style.overflow = 'hidden';
-    burgerMnu.style.backgroundColor = "#10101de6";
 
     // Запуск анимации
     requestAnimationFrame(() => {
