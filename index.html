@@ -29,8 +29,8 @@
 
                 <nav class="header__nav">
                     <button class="burger-btn" type="button" aria-label="Переключатель отображения меню">
-                        <div class="line line__top"></div>
-                        <div class="line line__bottom"></div>
+                        <span class="line line__top"></span>
+                        <span class="line line__bottom"></span>
                     </button>
                     <ul class="header__nav-list">
                         <li class="header__nav-item header__nav-item--active">
@@ -261,13 +261,12 @@
                                 </div>
                                 <label for="range">
                                     <input name="range" type="range" id="range" class="order__range-input" min="0"
-                                        max="100" value="75" />
+                                        max="100" value="75">
                                 </label>
                             </div>
 
-                            <label class="order__file" for="file" tabindex="0" role="button"
-                                aria-labelledby="file-label">
-                                <div class="order__file-label" id="file-label">
+                            <div class="order__file">
+                                <label class="order__file-label" for="file" tabindex="0" aria-labelledby="file-label">
                                     <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
                                         aria-label="Иконка документа" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -276,8 +275,8 @@
                                     </svg>
                                     <span class="order__file-text">Прикрепить файл</span>
                                     <input class="order__file-input" id="file" type="file" name="file" multiple>
-                                </div>
-                            </label>
+                                </label>
+                            </div>
                         </div>
 
                         <button class="btn btn--submit" type="submit">Отправить</button>
