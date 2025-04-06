@@ -137,8 +137,8 @@ img {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(16, 16, 29, 0.902);
-    -webkit-background-color: rgba(16, 16, 29);
+    background-color: rgba(16, 16, 29);
+    background-color: rgba(16, 16, 29, 0.9);
     padding: 33px 0;
 
     &__logo {
@@ -225,7 +225,7 @@ img {
     width: 100%;
     z-index: 13;
     background-color: rgba(16, 16, 29);
-    -webkit-background-color: rgba(16, 16, 29);
+    background-color: rgba(16, 16, 29, 0.9);
     padding-top: 64px;
 
     @media (max-width: 768px) {
@@ -268,6 +268,7 @@ img {
     -webkit-transition: opacity .3s ease;
     -o-transition: opacity .3s ease;
     transition: opacity .3s ease;
+    background-color: rgba(16, 16, 29);
     background-color: transparent;
     border: none;
 
@@ -1077,7 +1078,6 @@ img {
         text-transform: uppercase;
         border: 2px solid #3e9cdc;
         background-color: rgb(255, 255, 255);
-        -webkit-background-color: rgb(255, 255, 255);
         cursor: pointer;
         color: #272733;
 
