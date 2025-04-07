@@ -301,3 +301,41 @@ function initBurgerMenu() {
 initBurgerMenu();
 
 // ------------------------------------------------------------------------------
+
+
+// Функция для определения Android 14 @returns {boolean} true, если устройство работает на Android 14+
+
+function isAndroid14() {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Проверяем Android и версию (Android 14 соответствует версии API 34)
+    const isAndroid = /android/i.test(userAgent);
+    const androidVersionMatch = userAgent.match(/Android\s+(\d+)/);
+    const androidVersion = androidVersionMatch ? parseInt(androidVersionMatch[1], 10) : null;
+
+    // Android 14 = версия 14 (API 34)
+    return isAndroid && androidVersion >= 14;
+}
+
+/**
+ * Применяет исправления для Android 14
+ */
+function applyAndroid14Fixes() {
+    if (!isAndroid14()) return;
+
+    const header = document.querySelector('.header');
+    const burgerMnu = document.querySelector('.burger-mnu');
+    const burgerBtn = document.querySelector('.burger-btn');
+    const inputFile = document.querySelector('.order__file');
+
+    header.style.backgroundColor = 'rgba(16,16,29);'
+    burgerMnu.style.backgroundColor = 'rgba(16,16,29);'
+    burgerBtn.style.backgroundColor = 'rgba(16,16,29);'
+    inputFile.style.backgroundColor = 'rgba(255, 255, 255);'
+}
+
+// Запускаем при загрузке страницы
+document.addEventListener('DOMContentLoaded', applyAndroid14Fixes);
+
+// И при изменении размера (на случай динамического контента)
+window.addEventListener('resize', applyAndroid14Fixes);
